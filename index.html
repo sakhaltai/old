@@ -28,10 +28,23 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis in maiores autem quidem obcaecati excepturi! Cupiditate eaque itaque magni voluptatibus neque nobis est dolor? Atque sunt minus ipsa asperiores. At.</p>
             <h2>Projects</h2>
             <a href="https://cdn.rawgit.com/sakhaltai/sakhaltai.github.io/main/Set1_160x600.zip">Set1_160x600 Review Link</a>
+            <iframe src="animation.html" frameborder="0"></iframe>
             <a href="#">Project 2</a>
             <a href="#">Project 3</a>
             <a href="#">Project 4</a>
             <a href="#">Project 5</a>
+            <script src="player.js"></script>
+<script src="script.js"></script>
+<script>
+  var jsonData = {};
+  fetch('data2.json')
+    .then(response => response.json())
+    .then(data => {
+      jsonData = data;
+      // Initialize the player once the JSON data has been loaded
+      init();
+    });
+</script>
             <h2
 >Contact</h2>
             <p>myEmail@email.com</p>
